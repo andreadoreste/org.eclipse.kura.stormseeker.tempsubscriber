@@ -27,5 +27,7 @@
            unbind="unsetCloudSubscriber"
            cardinality="0..1"
            interface="org.eclipse.kura.cloudconnection.subscriber.CloudSubscriber"/>
+  
+  <reference bind="setGPIOService" cardinality="1..1" interface="org.eclipse.kura.gpio.GPIOService" name="GPIOService" policy="static" unbind="unsetGPIOService"/>
    
 </scr:component>
